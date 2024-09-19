@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo MFS LogIn</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="">
+        <div class="my-10 px-10 flex justify-between items-center">
+            <div class="stats shadow">
+                <div class="stat">
+                  <div class="stat-value mb-2 text-3xl ">$9400</div>
+                  <div class="stat-desc font-bold">Available Balance</div>
+                </div>
+            </div> 
+            <button class="shadow border px-5 py-2 rounded-md">Log Out</button> 
+        </div>
+        <div class="divider"></div>
+        <!-- button -->
+        <div class="px-10 py-5">
+            <div>
+                <h2 class="text-3xl font-bold mb-2">Welcome to Payooo!</h2>
+                <p>Enjoy easy and convenient financial services with us</p>
+            </div>
+            <div class="mt-10 grid grid-cols-3 gap-14">
+                <button id="add-money-btn" class="border-2 px-3 py-5 rounded-xl font-semibold">Add Money</button>
+                <button id="cash-out-btn"class="border-2 px-3 py-5 rounded-xl font-semibold">Cash Out</button>
+                <button id="transfer-money-btn" class="border-2 px-3 py-5 rounded-xl font-semibold">Transfer Money</button>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <!-- form -->
+
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl border mx-auto my-10">
+          <form class="card-body">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-semibold">Account Number</span>
+              </label>
+              <input type="text" placeholder="Enter Account number" class="input input-bordered rounded-full" id="add-account-input" required autocomplete="off" >
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-semibold">Enter Add Amount</span>
+              </label>
+              <input type="number" placeholder="Enter Amount" class="input input-bordered rounded-full" id="add-amount-input" required autocomplete="off" >
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-semibold">Enter Your Pin</span>
+              </label>
+              <input type="text" placeholder="Enter Pin number" class="input input-bordered rounded-full" id="add-pin-input" required autocomplete="off">
+            </div>
+            <div class="form-control mt-6">
+              <button class="btn btn-primary text-white rounded-full" id="add-money-btn">Add Money</button>
+            </div>
+          </form>
+        </div>
+    </div>
+
+
+    <script src="js/home.js"></script>
+</body>
+</html>

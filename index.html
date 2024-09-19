@@ -8,7 +8,36 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <header class="">
+        <h2 class="text-2xl font-bold text-center my-5"><u>Payoo MFS</u></h2>
+    </header>
+    <main>
+        <div>
+            <div class=" bg-base-200 min-h-screen">
+                <div class="hero-content">
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-20">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-semibold"> Mobile Number</span>
+                        </label>
+                        <input type="text" placeholder="Enter your number" class="input input-bordered rounded-full" id="number-input" required >
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-semibold">Pin Number</span>
+                        </label>
+                        <input type="number" placeholder="Enter your pin" class="input input-bordered rounded-full" id="pin-input" required >
+                      </div>
+                      <div class="form-control mt-6">
+                        <button class="btn btn-primary rounded-full text-white" id="login-btn">Login</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>    
 
 
 <script src="js/main.js"></script>
