@@ -8,11 +8,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="">
+    <div>
         <div class="my-10 px-10 flex justify-between items-center">
             <div class="stats shadow">
                 <div class="stat">
-                  <div class="stat-value mb-2 text-3xl ">$9400</div>
+                  <div id="balanced" class="stat-value mb-2 text-3xl ">9400</div>
                   <div class="stat-desc font-bold">Available Balance</div>
                 </div>
             </div> 
@@ -26,15 +26,15 @@
                 <p>Enjoy easy and convenient financial services with us</p>
             </div>
             <div class="mt-10 grid grid-cols-3 gap-14">
-                <button id="add-money-btn" class="border-2 px-3 py-5 rounded-xl font-semibold">Add Money</button>
-                <button id="cash-out-btn"class="border-2 px-3 py-5 rounded-xl font-semibold">Cash Out</button>
-                <button id="transfer-money-btn" class="border-2 px-3 py-5 rounded-xl font-semibold">Transfer Money</button>
+                <button id="add-money" class="border-2 px-3 py-5 rounded-xl font-semibold">Add Money</button>
+                <button id="cash-out"class="border-2 px-3 py-5 rounded-xl font-semibold">Cash Out</button>
+                <button id="transfer-money" class="border-2 px-3 py-5 rounded-xl font-semibold">Transfer Money</button>
             </div>
         </div>
         <div class="divider"></div>
-        <!-- form -->
 
-        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl border mx-auto my-10">
+        <!-- Cash in form -->
+        <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl border mx-auto my-10">
           <form class="card-body">
             <div class="form-control">
               <label class="label">
@@ -42,26 +42,61 @@
               </label>
               <input type="text" placeholder="Enter Account number" class="input input-bordered rounded-full" id="add-account-input" required autocomplete="off" >
             </div>
+
             <div class="form-control">
               <label class="label">
                 <span class="label-text font-semibold">Enter Add Amount</span>
               </label>
               <input type="number" placeholder="Enter Amount" class="input input-bordered rounded-full" id="add-amount-input" required autocomplete="off" >
             </div>
+
             <div class="form-control">
               <label class="label">
                 <span class="label-text font-semibold">Enter Your Pin</span>
               </label>
               <input type="text" placeholder="Enter Pin number" class="input input-bordered rounded-full" id="add-pin-input" required autocomplete="off">
             </div>
+
             <div class="form-control mt-6">
               <button class="btn btn-primary text-white rounded-full" id="add-money-btn">Add Money</button>
             </div>
           </form>
         </div>
+        <!-- Cash out Form -->
+        <div id="cashout-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl border mx-auto my-10 hidden">
+          <form class="card-body">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-semibold">Account Number</span>
+              </label>
+              <input type="text" placeholder="Enter Account number" class="input input-bordered rounded-full" id="cashout-account-input" required autocomplete="off" >
+            </div>
+
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-semibold">Enter Cash Out Amount</span>
+              </label>
+              <input type="number" placeholder="Enter Amount" class="input input-bordered rounded-full" id="cashout-amount-input" required autocomplete="off" >
+            </div>
+
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-semibold">Enter Your Pin</span>
+              </label>
+              <input type="text" placeholder="Enter Pin number" class="input input-bordered rounded-full" id="cashout-pin-input" required autocomplete="off">
+            </div>
+
+            <div class="form-control mt-6">
+              <button class="btn btn-primary text-white rounded-full" id="cashout-money-btn">Cash Out</button>
+            </div>
+          </form>
+        </div>
+
     </div>
 
-
     <script src="js/home.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/button.js"></script>
+
 </body>
 </html>

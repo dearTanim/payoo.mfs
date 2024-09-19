@@ -16,4 +16,4 @@ document.getElementById('login-btn').addEventListener('click', function(event){
         alert('Incorrect data');
     }
 
-})
+});
